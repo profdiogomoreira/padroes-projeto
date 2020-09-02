@@ -1,6 +1,6 @@
 # OCP - Princípio de Aberto/Fechado
 
-Software é um produto evolutivo, e raramente é feito uma única vez e nunca mais será modificado. Sendo assim, nosso software deve conseguir evoluir a medida que as **demandas por funcionalidade** crescem. Porém, como essas evoluções devem vir, por meio de alterações ou extensões?
+Software é um **produto evolutivo**, e raramente é feito uma única vez e nunca mais será modificado. Sendo assim, nosso software deve conseguir evoluir a medida que as **demandas por funcionalidade** crescem. Porém, como essas evoluções devem vir, por meio de alterações ou extensões?
 
 O **Princípio de Aberto/Fechado** diz que "Objetos ou entidades devem estar **abertas para extensão**, mas **fechadas para modificação**".
 
