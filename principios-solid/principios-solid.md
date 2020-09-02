@@ -13,12 +13,12 @@ O **Princípio de Responsabilidade Única** reforça o uso da coesão, afirmando
 Como exemplo, considere uma classe que **compila** \(coleta dados, realiza processamento, etc.\) e **imprime** um relatório.
 
 ```java
-class Report {
-  public void compileReport() {
+class Relatorio {
+  public void compilarRelatorio() {
     // Lógica de compilar o relatório
   }
 
-  public void printReport() {
+  public void imprimirRelatorio() {
     // Lógica para montar o relatório no formato de impressão escolhido
   }
 }
