@@ -10,9 +10,73 @@ Suponha que uma parte do sistema está utilizando uma determinada **funcionalida
 
 Neste contexto, para garantir que a classe **S** tenha o mesmo comportamento que a classe base **T**, é imprescindível a utilização de um contrato \(interface ou classe abstrata\), contendo as definições de métodos necessárias para que as classes que a herdarem sejam obrigadas a implementá-las.
 
-Um exemplo clássico para demonstrar uma violação desse princípio é a modelagem de classes `Quadrado` e `Retangulo`. Todo quadrado **é um** retângulo? **Sim**, por definição. Se **é um**, provavelmente conseguiriamos utilizar herança para modelar essas classes.
+Um exemplo clássico para demonstrar uma violação desse princípio é a modelagem de classes `Quadrado` e `Retangulo`. Todo quadrado **é um** retângulo? **Sim**, por definição. Se **é um**, portanto é lógico e intuitivo modelar uma classe `Quadrado` como sendo derivada da classe `Retangulo`. Aqui provavelmente conseguiriamos utilizar herança para modelar essas classes. Então teriamos as duas classes da seguinte maneira
 
- 
+```java
+public class Retangulo {
+    
+    private double altura;
+    private double largura;
 
+    public Retangulo(double altura, double largura) {
+        this.altura = altura;
+        this.largura = largura;
+    }
 
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public double getLargura() {
+        return largura;
+    }
+
+    public void setLargura(double largura) {
+        this.largura = largura;
+    }
+}
+```
+
+E a classe `Quadrado`. Perceba que sobrescrevemos os métodos `set` para garantir que ele continua sendo um quadrado, ou seja, tenho os lados iguais.
+
+```java
+public class Quadrado extends Retangulo {
+
+    public Quadrado(double altura, double largura) {
+        super(altura, largura);
+    }
+
+    @Override
+    public void setAltura(double altura) {
+        super.setAltura(altura);
+        super.setLargura(altura);
+    }
+
+    @Override
+    public void setLargura(double largura) {
+        super.setAltura(largura);
+        super.setLargura(largura);
+    }
+}
+```
+
+Com isso, a classe derivada **viola uma regra estabelecida na classe base**: a de que **altura e comprimento variam independentemente**. E quando isso vai se mostrar um problema? Vejamos o exemplo a seguir
+
+```java
+public void metodoXPTO(Retangulo retangulo) {
+   retangulo.setAltura(retangulo.getAltura() * 2);
+   retangulo.setComprimento(retangulo.getComprimento * 4);
+   // Realiza alguma operação com os novos dados
+}
+```
+
+O desenvolvedor facilmente pode assumir que estava lidando com um `Retangulo` \(afinal, é o tipo do parâmetro do método\) e aplicou um cálculo que variasse suas dimensões. No entanto, caso o método receba, em tempo de execução, um objeto do tipo `Quadrado` teremos um comportamento inesperado: o cálculo para redimensionar o retângulo o transformará em um quadrado, isto é, **ao quadruplicar o comprimento, inadvertidamente, a altura também foi quadruplicada**!
+
+O problema acima só existe porque, como dito anteriormente, a classe derivada n**ão respeita a regra da classe base de variar os lados de forma independente**. Sendo assim, do ponto de vista computacional, Quadrado não é um Retangulo, pois ambos possuem comportamentos diferentes em relação a alteração de seus lados.
+
+Esse cenário ocorre muitas vezes pela nossa intuição de que **Herança** sempre ocorre quando temos um cenário de "**é** **um"**, quando na verdade isso não é verdadeiro. Essa idéia ajuda na maioria das oportunidades de Herança, mas é sempre bom ter em mente o **Princípio de Substituição de Liskov** para verificarmos se realmente faz sentido.
 
