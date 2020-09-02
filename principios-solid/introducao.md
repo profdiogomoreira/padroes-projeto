@@ -6,3 +6,5 @@ Além dos padrões de projeto, que veremos ao longo da disciplina, existem princ
 
 Um grupo de princípios de desenvolvimento de software foi agrupada por [Robert Cecil Martin](https://pt.wikipedia.org/wiki/Robert_Cecil_Martin). Esses **cinco princípios** nos guia de como podemos criar softwares legíveis e sustentáveis. Eles serão apresentados nesse módulo como **SOLID**, uma referência a inicial de um dos princípios. Não existe uma ordem para entendê-los, muito menos para aplicá-los, então fique a vontade para estudar na sua ordem.
 
+![](../.gitbook/assets/image.png)
+
