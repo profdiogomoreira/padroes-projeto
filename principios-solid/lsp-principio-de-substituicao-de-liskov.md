@@ -78,5 +78,5 @@ O desenvolvedor facilmente pode assumir que estava lidando com um `Retangulo` \(
 
 O problema acima só existe porque, como dito anteriormente, a classe derivada n**ão respeita a regra da classe base de variar os lados de forma independente**. Sendo assim, do ponto de vista computacional, Quadrado não é um Retangulo, pois ambos possuem comportamentos diferentes em relação a alteração de seus lados.
 
-Esse cenário ocorre muitas vezes pela nossa intuição de que **Herança** sempre ocorre quando temos um cenário de "**é** **um"**, quando na verdade isso não é verdadeiro. Essa idéia ajuda na maioria das oportunidades de Herança, mas é sempre bom ter em mente o **Princípio de Substituição de Liskov** para verificarmos se realmente faz sentido.
+Esse cenário de quebra do princípio ocorre muitas vezes pela nossa intuição de que **Herança** sempre ocorre quando temos um cenário de "**é** **um"**, quando na verdade isso **não é verdadeiro**. Essa idéia ajuda na **maioria** das oportunidades de Herança, mas é sempre bom ter em mente o **Princípio de Substituição de Liskov** para verificarmos se realmente faz sentido.
 
