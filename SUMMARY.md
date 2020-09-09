@@ -21,7 +21,13 @@
 * [ISP - Princípio de Segregação de Interfaces](principios-solid/isp-principio-de-segregacao-de-interfaces.md)
 * [DIP - Princípio de Inversão de Dependência](principios-solid/dip-principio-de-inversao-de-dependencia.md)
 
+## Padrões de Projetos e catálogos
+
+* [Introdução](padroes-de-projetos-e-catalogos/introducao.md)
+
 ## Padrões Comportamentais <a id="padroes-gof-comportamentais"></a>
+
+* [Padrão Strategy](padroes-gof-comportamentais/padrao-strategy.md)
 
 ## Padrões Criacionais <a id="padroes-gof-criacionais"></a>
 
