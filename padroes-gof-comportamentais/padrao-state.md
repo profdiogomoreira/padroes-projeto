@@ -4,7 +4,13 @@ O padrão **State** é intimamente relacionado com o conceito de uma [Máquina d
 
 A ideia principal é que, em **qualquer dado momento**, há um número **finito** de **estados** que um programa possa estar. Dentro de qualquer estado único, o programa se **comporta de forma diferente**, e o programa pode ser trocado de um estado para outro instantaneamente. Contudo, **dependendo do estado atual, o programa pode ou não trocar para um determinado estado**. Essas regras de troca, chamadas **transições**, também são finitas e pré determinadas.
 
-Você também pode aplicar essa abordagem para objetos. Imagine que nós temos uma classe `Documento`. Um documento pode estar em um de três estados: `Rascunho`, `Moderação` e `Publicado`. O método `publicar` do documento funciona um pouco diferente em cada estado:
+No **Padrão State**, a idéia é que podemos aplicar essa abordagem também para objetos. Resgate na sua memória e provavelmente você já se deparou com alguma situação onde precisou realizar algumas verificações de estado de um ou outro objeto para decidir como o algoritmo vai se comportar.
+
+### Problema
+
+
+
+Imagine que nós temos uma classe `Documento`. Um documento pode estar em um de três estados: `Rascunho`, `Moderação` e `Publicado`. O método `publicar` do documento funciona um pouco diferente em cada estado:
 
 * No `Rascunho`, ele move o documento para a moderação.
 * Na `Moderação` ele torna o documento público, mas apenas se o usuário atual é um administrador.
@@ -38,4 +44,8 @@ class Document is
 A maior fraqueza de uma máquina de estados baseada em condicionais se revela quando começamos a adicionar mais e mais estados e comportamentos baseados em estados para a classe `Documento`. A maioria dos métodos irá conter condicionais monstruosas que selecionam o comportamento apropriado de um método de acordo com o estado atual. Um código como esse é muito difícil de se fazer manutenção porque qualquer mudança na lógica de transição pode necessitar de mudanças de condicionais de estado em todos os métodos.
 
 O problema tende a ficar maior a medida que o projeto evolui. É muito difícil prever todos os possíveis estados e transições no estágio inicial de projeto. Portanto, uma máquina de estados enxuta, construída com um número limitado de condicionais pode se tornar uma massa inchada e disforme com o tempo.
+
+### Referências
+
+Refactoring.Guru. [https://refactoring.guru/pt-br/design-patterns/state](https://refactoring.guru/pt-br/design-patterns/state)
 
