@@ -28,7 +28,6 @@
 ## Padrões Comportamentais <a id="padroes-gof-comportamentais"></a>
 
 * [Padrão Strategy](padroes-gof-comportamentais/padrao-strategy.md)
-* [Padrão State](padroes-gof-comportamentais/padrao-state.md)
 
 ## Padrões Criacionais <a id="padroes-gof-criacionais"></a>
 
