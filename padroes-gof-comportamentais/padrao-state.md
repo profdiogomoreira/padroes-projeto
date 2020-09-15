@@ -69,7 +69,7 @@ Com certeza **não vale a pena investir tempo e código numa solução que utili
 
 ### Solução
 
-No livro Design Patterns, a intenção declarada do padrão é:
+No livro “**Design Patterns: Elements of Reusable Object-Oriented Software**”, a intenção declarada do padrão é:
 
 > Permite a um objeto alterar seu comportamento quando o seu estado interno muda. Oobjeto parecerá ter mudado sua classe.
 

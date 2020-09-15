@@ -1,0 +1,2 @@
+# Padrão Chain of Responsibility
+
