@@ -31,6 +31,7 @@
 * [Padrão State](padroes-gof-comportamentais/padrao-state.md)
 * [Padrão Observer](padroes-gof-comportamentais/padrao-observer.md)
 * [Padrão Chain of Responsibility](padroes-gof-comportamentais/padrao-chain-of-responsibility.md)
+* [Padrão Command](padroes-gof-comportamentais/padrao-command.md)
 
 ## Padrões Criacionais <a id="padroes-gof-criacionais"></a>
 
