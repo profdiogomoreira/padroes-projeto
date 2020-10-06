@@ -33,6 +33,7 @@
 * [Padrão Chain of Responsibility](padroes-gof-comportamentais/padrao-chain-of-responsibility.md)
 * [Padrão Command](padroes-gof-comportamentais/padrao-command.md)
 * [Padrão Template Method](padroes-gof-comportamentais/padrao-template-method.md)
+* [Padrão Null Object](padroes-gof-comportamentais/padrao-null-object.md)
 
 ## Padrões Criacionais <a id="padroes-gof-criacionais"></a>
 
