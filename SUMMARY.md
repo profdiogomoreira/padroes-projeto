@@ -37,5 +37,8 @@
 
 ## Padrões Criacionais <a id="padroes-gof-criacionais"></a>
 
+* [Padrão Singleton](padroes-gof-criacionais/padrao-singleton.md)
+* [Padrão Prototype](padroes-gof-criacionais/padrao-prototype.md)
+
 ## Padrões Estruturais <a id="padroes-gof-estruturais"></a>
 
