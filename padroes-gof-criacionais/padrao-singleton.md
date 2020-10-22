@@ -47,13 +47,12 @@ public class Configuracao {
 
     private static Configuracao singleton;
 
-    private Configuracao(String nomeUsuario) {
-        this.nomeUsuario = nomeUsuario;
+    private Configuracao() {
     }
 
-    public static Configuracao getInstance(String nomeUsuario) {
+    public static Configuracao getInstance() {
         if(singleton == null) {
-            singleton = new Configuracao(nomeUsuario);
+            singleton = new Configuracao();
         }
         return singleton;
     }
