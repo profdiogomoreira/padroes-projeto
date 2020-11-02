@@ -11,6 +11,7 @@
   * [Herança](orientacao-a-objetos/conceitos-basicos-de-orientacao-a-objetos/heranca.md)
   * [Realização](orientacao-a-objetos/conceitos-basicos-de-orientacao-a-objetos/realizacao.md)
   * [Polimorfismo](orientacao-a-objetos/conceitos-basicos-de-orientacao-a-objetos/polimorfismo.md)
+  * [Imutabilidade](orientacao-a-objetos/conceitos-basicos-de-orientacao-a-objetos/imutabilidade.md)
 
 ## Princípios SOLID
 
@@ -39,6 +40,7 @@
 
 * [Padrão Singleton](padroes-gof-criacionais/padrao-singleton.md)
 * [Padrão Prototype](padroes-gof-criacionais/padrao-prototype.md)
+* [Padrão Builder](padroes-gof-criacionais/padrao-builder.md)
 
 ## Padrões Estruturais <a id="padroes-gof-estruturais"></a>
 
