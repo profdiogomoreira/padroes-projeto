@@ -41,6 +41,9 @@
 * [Padrão Singleton](padroes-gof-criacionais/padrao-singleton.md)
 * [Padrão Prototype](padroes-gof-criacionais/padrao-prototype.md)
 * [Padrão Builder](padroes-gof-criacionais/padrao-builder.md)
+* [Padrões Factory](padroes-gof-criacionais/padroes-factory/README.md)
+  * [Factory Method](padroes-gof-criacionais/padroes-factory/factory-method.md)
+  * [Abstract Factory](padroes-gof-criacionais/padroes-factory/abstract-factory.md)
 
 ## Padrões Estruturais <a id="padroes-gof-estruturais"></a>
 
