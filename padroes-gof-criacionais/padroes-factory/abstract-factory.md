@@ -21,7 +21,7 @@ Nesse exemplo, cada janela de Dialogo concreta, que estende de `Dialogo`, deve t
 Pois bem, nesse caso, toda vez que quisermos criar uma janela de Dialogo para um sistema operacional especifico, iremos usar sua própria **Abstract Factory**, como no exemplo abaixo:
 
 ```java
-public class DialogoLinux {
+public class DialogoLinux extends Dialogo {
     public Botao criarBotao() {
         return new BotaoLinux(); // BotaoLinux é uma classe especializada de Botao
     }
