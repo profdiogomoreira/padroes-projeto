@@ -47,3 +47,7 @@
 
 ## Padrões Estruturais <a id="padroes-gof-estruturais"></a>
 
+---
+
+* [Padrão Adapter](padrao-adapter.md)
+
