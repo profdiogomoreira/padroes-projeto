@@ -50,4 +50,7 @@
 ---
 
 * [Padrão Adapter](padrao-adapter.md)
+* [Padrão Facade](padrao-facade.md)
+* [Padrão Decorator](padrao-decorator.md)
+* [Padrão Proxy](padrao-proxy.md)
 
