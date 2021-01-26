@@ -27,7 +27,7 @@ Esse código demonstra como o encapsulamento é importante. Ao gerarmos um `get`
 
 Imagine que um componente do sistema realizou uma chamada da seguinte maneira: `getNumerosContato().add("1729817982")`. Estamos **mudando o estado do objeto `Pessoa`** sem que ele tenha **conhecimento** disso, uma vez que a adição não passou por um método do mesmo. 
 
-Indo além, podemos imaginar um cenário onde dois componentes \(`X` e `Y`\) usam o mesmo objeto `Pessoa` e em um **primeiro** momento, `X` solicita `getNumerosContato()` para executar alguma lógica de negócios. Se `Y` realiza uma chamada `setNumerosContato(...)` em um **segundo momento**, alterando completamente a colegação, significa dizer que a **lógica executada por `X` passa a ser inconsistente**.
+Indo além, podemos imaginar um cenário onde dois componentes \(`X` e `Y`\) usam o mesmo objeto `Pessoa` e em um **primeiro** momento, `X` solicita `getNumerosContato()` para executar alguma lógica de negócios. Se `Y` realiza uma chamada `setNumerosContato(...)` em um **segundo momento**, alterando completamente a coleção, significa dizer que a **lógica executada por `X` passa a ser inconsistente**.
 
 Vários cenários podem ser explorados quando falamos de quebra de encapsulamento, principalmente quando falamos de [programação concorrente](https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_concorrente).
 {% endhint %}
